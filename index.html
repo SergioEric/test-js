@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- <link rel="stylesheet" href="css/debug.css"> -->
+</head>
+
+<body>
+
+  <section id="welcome">
+  </section>
+
+  <div id="header">
+  </div>
+  <div class="test flex" id="main_test">
+    <div class="test-form flex col" id="test-form">
+      <form id="question">
+        <!-- DATOS SE PASAN POR JS -->
+      </form>
+      <div id="info" class="info flex col">
+        <!-- DATOS SE PASAN POR JS -->
+      </div>
+
+    </div>
+    <section class="option flex col" id="options">
+      <div class="number_questions">
+        <p>Preguntas</p>
+        <div class="table flex">
+          <p id="q_1" class="number_table">1</p>
+          <p id="q_2" class="number_table">2</p>
+          <p id="q_3" class="number_table">3</p>
+          <p id="q_4" class="number_table">4</p>
+          <p id="q_5" class="number_table">5</p>
+          <p id="q_6" class="number_table">6</p>
+          <p id="q_7" class="number_table">7</p>
+          <p id="q_8" class="number_table">8</p>
+          <p id="q_9" class="number_table">9</p>
+        </div>
+      </div>
+      <p id="done_questions">Preguntas realizadas: 0</p>
+      <div class="progress">
+        <div class="progress-bar-border"></div>
+        <div class="progress-bar"></div>
+      </div>
+      <p id="question_of_total">Pregunta 1 de 9</p>
+      <div class="flex arrow-btn">
+        <p id="arrow-btn-prev">❮ Anterior</p>
+        <p id="arrow-btn-next"> Siguiente ❯</p>
+      </div>
+    </section>
+    <!-- <pre id="log">
+        </pre> -->
+  </div>
+  <section id="_results" class="flex col">
+    <!-- AQUI VAN LOS RESULTADOS -->
+    <h1 onclick="showResults()" class="_results-h1">VER RESULTADOS</h1>
+  </section>
+  <script src="js/testArray.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
