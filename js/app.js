@@ -285,6 +285,22 @@ function showResults(){
       </tr>
       ${string}
     </table>
+
+    <h1>${(approved()) ? 'Aprobo' : 'NO aprobaste'} </h1>
   `;
 
+}
+
+function approved(){
+  let counter=0;
+  test.map((res, index)=>{
+    if(!response[index][1] == 0){//si la respondio
+      if(res[4] ===response[index][1]) {// si aserto
+        counter+=1;
+      }
+    }
+  });
+  // el criterio es si las respuestas buenas son mayores o iguales a 5
+  //aprobó el test
+  return (counter>=5) ? true: false;
 }
